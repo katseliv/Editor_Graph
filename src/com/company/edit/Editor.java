@@ -389,8 +389,7 @@ public class Editor extends JPanel {
         }
 
         private boolean containsLine(Node node, Line line) {
-            return node.getCircle().contains(line.getLine().getX1(), line.getLine().getY1())
-                    || node.getCircle().contains(line.getLine().getX2(), line.getLine().getY2());
+            return node.getCircle().contains(line.getLine().getX1(), line.getLine().getY1()) || node.getCircle().contains(line.getLine().getX2(), line.getLine().getY2());
         }
     }
 }
